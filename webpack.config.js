@@ -5,7 +5,6 @@ var path = require('path');
 // Naming and path settings
 var appName = 'app';
 var entryPoint = './src/main.js';
-var exportPath = path.resolve(__dirname, './build');
 
 // Enviroment flag
 var plugins = [];
@@ -32,8 +31,8 @@ if (env === 'production') {
 module.exports = {
     entry: entryPoint,
     output: {
-        path: exportPath,
-        filename: appName
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'build.js'
     },
     module: {
         loaders: [
