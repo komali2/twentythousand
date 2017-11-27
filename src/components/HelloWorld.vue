@@ -1,13 +1,21 @@
+
+
 <template>
   <div class="hello alert-success">
     Hi
     <button class="btn btn-primary">Test</button>
+    <input-with-descriptor></input-with-descriptor>
   </div>
 </template>
 
 <script>
+import InputWithDescriptor from '@/components/InputWithDescriptor.vue'
+
 export default {
   name: 'HelloWorld',
+  components: {
+    InputWithDescriptor
+    },
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
