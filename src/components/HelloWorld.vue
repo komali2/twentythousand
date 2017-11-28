@@ -4,7 +4,7 @@
   <div class="hello alert-success">
     Hi
     <button class="btn btn-primary">Test</button>
-    <input-with-descriptor></input-with-descriptor>
+    <input-with-descriptor label="Test descriptor"></input-with-descriptor>
   </div>
 </template>
 
