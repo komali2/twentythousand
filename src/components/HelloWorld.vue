@@ -4,7 +4,8 @@
   <div class="hello alert-success">
     Hi
     <button class="btn btn-primary">Test</button>
-    <input-with-descriptor label="Test descriptor"></input-with-descriptor>
+    <input-with-descriptor v-model="input_1" label="Test descriptor"></input-with-descriptor>
+    {{input_1}}
   </div>
 </template>
 
@@ -18,7 +19,8 @@ export default {
     },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      input_1: '',
     }
   }
 }
