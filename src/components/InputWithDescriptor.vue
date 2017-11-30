@@ -1,11 +1,14 @@
 <template>
-    <input :placeholder="label" v-model="user_input"></input>
+  <div>
+    <label >{{label}}</label>
+    <input :placeholder="placeholder" v-model="user_input" class="form-control"></input>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'input-with-descriptor',
-  props: ['label'],
+  props: ['label', 'placeholder', 'classes'],
   data: function(){
     return {
       user_input: '',

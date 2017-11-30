@@ -1,11 +1,25 @@
 
 
 <template>
-  <div class="hello alert-success">
-    Hi
-    <button class="btn btn-primary">Test</button>
-    <input-with-descriptor v-model="input_1" label="Test descriptor"></input-with-descriptor>
-    {{input_1}}
+  <div class="">
+    <div class="row">
+      <input-with-descriptor 
+        v-model="hours_day" 
+        label="How many hours a day are you able to practice?" 
+        placeholder="Hours/Day" 
+        class="col"
+        >
+      </input-with-descriptor>
+    </div>
+    <div class="row">
+      <input-with-descriptor 
+        v-model="days_week" 
+        label="How many days a week can you practice? " 
+        placeholder="Days/Week"
+        class="col"
+        >
+      </input-with-descriptor>
+    </div>
   </div>
 </template>
 
@@ -20,7 +34,8 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      input_1: '',
+      hours_day: '',
+      days_week: '',
     }
   }
 }
@@ -28,18 +43,5 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
