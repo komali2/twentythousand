@@ -54,7 +54,7 @@
 import InputWithDescriptor from '@/components/InputWithDescriptor.vue'
 
 export default {
-  name: 'HelloWorld',
+  name: 'Home',
   components: {
     InputWithDescriptor
     },
