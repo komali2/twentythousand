@@ -7,7 +7,7 @@
         v-model="hours_day" 
         label="How many hours a day are you able to practice?" 
         placeholder="Hours/Day" 
-        class="col-xs-3"
+        class="col-xs-3 mt-1"
         >
       </input-with-descriptor>
     </div>
@@ -16,24 +16,21 @@
         v-model="days_week" 
         label="How many days a week can you practice? " 
         placeholder="Days/Week"
-        class="col-xs-3"
+        class="col-xs-3 mt-1"
         >
       </input-with-descriptor>
     </div>
-    Working {{hours_week}} hours a week, or {{hours_day}} hours a day for {{days_in_year}} days of the year, 
-    it will take you approximately {{years_until_complete}} years, or {{worked_days_needed}} worked days to achieve 20000 hours. 
-    In {{weeks_until_complete}} weeks, you will have achieved your goal. That's {{days_until_complete}} days away.
-    <div>
-      <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+    <div class="row mt-3">
+      <ul class="list-group  w-50">
+        <li class="list-group-item d-flex justify-content-between align-items-center ">
           Hours worked per week
           <span class="badge badge-primary badge-pill">{{hours_week}}</span>
         </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <li class="list-group-item d-flex justify-content-between align-items-center ">
           Days worked per year
           <span class="badge badge-primary badge-pill">{{days_in_year}}</span>
         </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <li class="list-group-item d-flex justify-content-between align-items-center ">
           Years Until Complete
           <span class="badge badge-primary badge-pill">{{years_until_complete}}</span>
         </li>
