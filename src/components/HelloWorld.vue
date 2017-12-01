@@ -20,6 +20,15 @@
         >
       </input-with-descriptor>
     </div>
+    <div class="row">
+      <input-with-descriptor 
+        v-model="hours_goal" 
+        label="How many hours are you trying to achieve? (20,000 = 'expert')" 
+        placeholder="Desired Hours"
+        class="col-xs-3 mt-1"
+        >
+      </input-with-descriptor>
+    </div>
     <div class="row mt-3">
       <ul class="list-group  w-50">
         <li class="list-group-item d-flex justify-content-between align-items-center ">
@@ -43,7 +52,6 @@
 
 <script>
 import InputWithDescriptor from '@/components/InputWithDescriptor.vue'
-const HOURS_CONST = 10000;
 
 export default {
   name: 'HelloWorld',
@@ -52,9 +60,9 @@ export default {
     },
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App',
       hours_day: 0,
       days_week: 0,
+      hours_goal: 20000
     }
   },
   computed: {
@@ -75,7 +83,7 @@ export default {
       return hours_worked = this.hours * this.days_in_year; 
     },
     worked_days_needed: function(){
-      return (HOURS_CONST / this.hours);
+      return (this.hours_goal / this.hours);
     },
     days_until_complete: function(){
       return this.weeks_until_complete * 7;
