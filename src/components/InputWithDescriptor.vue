@@ -1,7 +1,11 @@
 <template>
   <div>
     <label >{{label}}</label>
-    <input :placeholder="placeholder" v-model="user_input" class="form-control"></input>
+    <input 
+      :placeholder="placeholder" 
+      v-model="user_input" 
+      class="form-control"
+      type="number"></input>
   </div>
 </template>
 
