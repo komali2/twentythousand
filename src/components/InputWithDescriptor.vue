@@ -3,7 +3,7 @@
     <label >{{label}}</label>
     <input 
       :placeholder="placeholder" 
-      v-model="user_input" 
+      v-model.number="user_input" 
       class="form-control"
       type="number"></input>
   </div>
