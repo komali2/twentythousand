@@ -41,7 +41,7 @@ export default {
         years_until_complete: Number,
         hours_goal: {
             type: Number,
-            default: 20000,
+            default: 10000,
         },
     },
     data: function(){

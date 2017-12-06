@@ -22,7 +22,7 @@
     <div class="row">
       <input-with-descriptor 
         v-model.number="hours_goal" 
-        label="How many hours are you trying to achieve? (20,000 = 'expert')" 
+        label="How many hours are you trying to achieve? (10,000 = 'expert')" 
         placeholder="Desired Hours"
         class="col-xs-3 mt-1"
         ></input-with-descriptor>
